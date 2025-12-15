@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(180deg, #ffd6e8, #ff9ecb);
+  color: #5a2a4a;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(255, 182, 213, 0.8);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(6px);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #7a2d5d;
+}
+
+/* Home */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.home-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.home-content p {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.home-content button {
+  background: #ff7fbf;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.home-content button:hover {
+  transform: scale(1.05);
+}
+
+/* Floating icons */
+.floating {
+  position: absolute;
+  font-size: 2rem;
+  animation: float 4s ease-in-out infinite;
+}
+
+.cherry { top: 10%; left: 10%; }
+.strawberry { bottom: 20%; right: 15%; }
+.bear { top: 20%; right: 10%; }
+.ribbon { bottom: 10%; left: 15%; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Materi */
+.materi {
+  padding: 60px 20px;
+  background: #fff0f7;
+  text-align: center;
+}
+
+.materi h2 {
+  margin-bottom: 30px;
+}
+
+.accordion {
+  max-width: 600px;
+  margin: auto;
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #ffb3d9;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+  background: #ffe4f1;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+/* Galeri */
+.galeri {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.card {
+  background: #ffe0ef;
+  padding: 40px 10px;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background: #ffb3d9;
+  text-align: center;
+  font-weight: 600;
+}
